@@ -1,7 +1,7 @@
 
 #Here the necessary libraries are imported and installed
 import streamlit as st
-from langchain_openai import OpenAI  # this is statement that will correctly import OpenAi, had many issues importing openai, and this is the only way that it works for my computer system
+from langchain.llms import OpenAI  # this is statement that will correctly import OpenAi, had many issues importing openai, and this is the only way that it works for my computer system
 from langchain.docstore.document import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains.summarize import load_summarize_chain
